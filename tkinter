@@ -1,0 +1,20 @@
+import tkinter as tk
+from tkinter import ttk
+def converter():
+        print("hellow world")
+
+root = tk.Tk(colorsys="blue")
+heading = ttk.Label(master= root, text= " meter to km converter", font = " times 30 bold italic")
+heading.pack()
+inputframin = ttk.Frame(master = root)a
+inputframin.pack(padx = 20)
+enterybox = ttk.Entry(master =inputframin,)
+enterybox.pack(side= "left", pady =10)
+button = ttk.Button(master = inputframin, text = "button",command=converter())
+button.pack(side="right")
+output = ttk.Label(master = root, text = " converter",font= " times 20 bold")
+output.pack(pady = 20)
+
+
+
+root.mainloop()
